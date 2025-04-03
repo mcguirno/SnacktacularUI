@@ -10,32 +10,24 @@
 		4F65BE802D9F2B9700B34E1C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4F65BE7F2D9F2B9700B34E1C /* FirebaseAuth */; };
 		4F65BE822D9F2B9700B34E1C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4F65BE812D9F2B9700B34E1C /* FirebaseFirestore */; };
 		4F65BE842D9F2B9700B34E1C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4F65BE832D9F2B9700B34E1C /* FirebaseStorage */; };
+		4F65BE8F2D9F35FB00B34E1C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F65BE8C2D9F35FB00B34E1C /* LoginView.swift */; };
+		4F65BE902D9F35FB00B34E1C /* SnacktacularUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F65BE8D2D9F35FB00B34E1C /* SnacktacularUIApp.swift */; };
+		4F65BE912D9F35FB00B34E1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F65BE872D9F35FB00B34E1C /* Preview Assets.xcassets */; };
+		4F65BE922D9F35FB00B34E1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F65BE892D9F35FB00B34E1C /* Assets.xcassets */; };
+		4F65BE932D9F35FB00B34E1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F65BE8A2D9F35FB00B34E1C /* GoogleService-Info.plist */; };
+		4F65BE962D9F365B00B34E1C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F65BE952D9F365B00B34E1C /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F65BE6B2D9F296100B34E1C /* SnacktacularUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnacktacularUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F65BE872D9F35FB00B34E1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F65BE892D9F35FB00B34E1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F65BE8A2D9F35FB00B34E1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F65BE8B2D9F35FB00B34E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F65BE8C2D9F35FB00B34E1C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4F65BE8D2D9F35FB00B34E1C /* SnacktacularUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacktacularUIApp.swift; sourceTree = "<group>"; };
+		4F65BE952D9F365B00B34E1C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		4F65BE7D2D9F29DF00B34E1C /* Exceptions for "SnacktacularUI" folder in "SnacktacularUI" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 4F65BE6A2D9F296100B34E1C /* SnacktacularUI */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		4F65BE6D2D9F296100B34E1C /* SnacktacularUI */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				4F65BE7D2D9F29DF00B34E1C /* Exceptions for "SnacktacularUI" folder in "SnacktacularUI" target */,
-			);
-			path = SnacktacularUI;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4F65BE682D9F296100B34E1C /* Frameworks */ = {
@@ -54,7 +46,7 @@
 		4F65BE622D9F296100B34E1C = {
 			isa = PBXGroup;
 			children = (
-				4F65BE6D2D9F296100B34E1C /* SnacktacularUI */,
+				4F65BE8E2D9F35FB00B34E1C /* SnacktacularUI */,
 				4F65BE6C2D9F296100B34E1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +57,28 @@
 				4F65BE6B2D9F296100B34E1C /* SnacktacularUI.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4F65BE882D9F35FB00B34E1C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F65BE872D9F35FB00B34E1C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F65BE8E2D9F35FB00B34E1C /* SnacktacularUI */ = {
+			isa = PBXGroup;
+			children = (
+				4F65BE8D2D9F35FB00B34E1C /* SnacktacularUIApp.swift */,
+				4F65BE8C2D9F35FB00B34E1C /* LoginView.swift */,
+				4F65BE952D9F365B00B34E1C /* ListView.swift */,
+				4F65BE892D9F35FB00B34E1C /* Assets.xcassets */,
+				4F65BE8A2D9F35FB00B34E1C /* GoogleService-Info.plist */,
+				4F65BE8B2D9F35FB00B34E1C /* Info.plist */,
+				4F65BE882D9F35FB00B34E1C /* Preview Content */,
+			);
+			path = SnacktacularUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,9 +95,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				4F65BE6D2D9F296100B34E1C /* SnacktacularUI */,
 			);
 			name = SnacktacularUI;
 			packageProductDependencies = (
@@ -137,6 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F65BE912D9F35FB00B34E1C /* Preview Assets.xcassets in Resources */,
+				4F65BE922D9F35FB00B34E1C /* Assets.xcassets in Resources */,
+				4F65BE932D9F35FB00B34E1C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F65BE8F2D9F35FB00B34E1C /* LoginView.swift in Sources */,
+				4F65BE902D9F35FB00B34E1C /* SnacktacularUIApp.swift in Sources */,
+				4F65BE962D9F365B00B34E1C /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

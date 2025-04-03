@@ -18,6 +18,7 @@ struct LoginView: View {
     @State private var showingAlert = false
     @State private var alertMessage = ""
     @State private var buttonDisabled = true
+    @State private var presentSheet = false
     @FocusState private var focusField: Field?
     
     var body: some View {
@@ -73,6 +74,15 @@ struct LoginView: View {
         .alert(alertMessage, isPresented: $showingAlert) {
             Button("OK", role: .cancel) {}
         }
+        .onAppear() {
+            if Auth.auth().currentUser != nil {
+                print("Login successful")
+                presentSheet = true
+            }
+        }
+        .fullScreenCover(isPresented: $presentSheet) {
+            ListView()
+        }
     }
     
     func enableButtons() {
@@ -90,7 +100,7 @@ struct LoginView: View {
                 showingAlert = true
             } else {
                 print("Registration Success")
-                //TODO: Load ListView
+                presentSheet = true
             }
         }
     }
@@ -104,7 +114,7 @@ struct LoginView: View {
                 showingAlert = true
             } else {
                 print("Login Success")
-                //TODO: Load ListView
+                presentSheet = true
             }
         }
     }
